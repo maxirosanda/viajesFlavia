@@ -1,0 +1,46 @@
+.producto{
+    .foto{
+        img{
+            border-radius: 55px;
+        }
+    }
+    .estrellas{
+        i{
+            color: #e7bc3d;
+            font-size: 24px;
+        }
+    }
+    .botones{
+        @media(max-width:768px){
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            box-shadow: $sombraSuperior;
+            z-index: 100;
+        }
+        .boton-compra{
+            @include boton(red,white,16px,100px);
+            margin-bottom: 5px;
+        }
+        .boton-carrito{
+            @include boton(white,blue,16px,100px);
+            border: 1px solid $bg-color;
+            margin-top: 0;
+            font-weight: 700px;
+            &:hover{
+                color: blue;
+            }
+        }
+    }
+    
+    .precio{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    
+}
+.separador-botones{
+    height: 135px;
+}

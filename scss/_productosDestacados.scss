@@ -1,0 +1,28 @@
+.titulo-destacados{
+    margin: 10px;
+    
+}
+
+.tarjeta-destacada{
+    width: 460px;
+    margin: 10px;
+    img {
+        width: 200px;
+        height: 120px;
+        object-fit: cover;
+    }
+    .contenido button, .contenido a{
+       @include boton(red,white,16px,100px);
+}
+}
+
+@media(max-width:576px){
+
+    .tarjeta-destacada{
+        width: 250px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
