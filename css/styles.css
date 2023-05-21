@@ -52,10 +52,10 @@
     color: white;
   }
   .navegador .fa-bars:hover + ul {
-    right: 0;
+    left: 0;
   }
   .navegador ul {
-    right: -350px;
+    left: -350px;
     top: 0;
     position: fixed;
     background-color: white;
@@ -64,7 +64,7 @@
     z-index: 5;
   }
   .navegador ul:hover {
-    right: 0;
+    left: 0;
   }
   .navegador ul li a {
     color: black;
@@ -141,7 +141,7 @@
   height: 250px;
   object-fit: cover;
 }
-@media (max-width: 550px) {
+@media (max-width: 590px) {
   .filtro img {
     height: 350px;
   }

@@ -24,17 +24,18 @@
 
 @media(max-width:576px){
     .navegador{
+        
         .fa-bars{
             display: block;
             font-size: 32px;
             margin: 10px;
             color: white;
             &:hover + ul{
-                right: 0;
+                left: 0;
              }
         }
         ul{
-            right: -350px;
+            left: -350px;
             top: 0;
             position: fixed;
             background-color: white;
@@ -42,7 +43,7 @@
             height: 100vh;
             z-index: 5;
             &:hover{
-                right: 0;
+                left: 0;
             }
             li a{
                 color: black;
