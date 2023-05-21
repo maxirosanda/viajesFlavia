@@ -1,0 +1,11 @@
+%input{
+    outline: none;
+    border: 0;
+    width: 200px;
+    padding: 0.5em;
+    background-color: $bg-color;
+    color: white;
+    &::placeholder{
+        color: white;
+    }
+}

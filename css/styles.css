@@ -9,6 +9,18 @@
   padding: 0;
 }
 
+.filtro form .inputs input[type=submit], .filtro form .inputs input[type=date], .filtro form .inputs input[type=text] {
+  outline: none;
+  border: 0;
+  width: 200px;
+  padding: 0.5em;
+  background-color: #035f50;
+  color: white;
+}
+.filtro form .inputs input[type=submit]::placeholder, .filtro form .inputs input[type=date]::placeholder, .filtro form .inputs input[type=text]::placeholder {
+  color: white;
+}
+
 .navegador {
   background-color: #035f50;
 }
@@ -119,6 +131,185 @@
     font-size: 20px;
   }
 }
+.filtro {
+  position: relative;
+  font-size: 11px;
+  margin: 0px 0px 90px 0px;
+}
+.filtro img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+@media (max-width: 550px) {
+  .filtro img {
+    height: 350px;
+  }
+}
+.filtro form {
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px -3px 8px;
+  padding: 3em 1em;
+  background-color: #035f50;
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%;
+  bottom: -75px;
+  border-radius: 15px;
+}
+.filtro form h2 {
+  font-size: 2em;
+  padding: 1em 0.5em;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .filtro form {
+    width: 500px;
+  }
+}
+@media (max-width: 550px) {
+  .filtro form {
+    width: 90%;
+  }
+  .filtro form img {
+    height: 450px;
+  }
+}
+.filtro form .inputs {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: "zona1 zona1 zona1  zona2 zona2 zona2  zona3 zona4 zona5 zona5  zona6 none ";
+  align-items: center;
+  justify-content: center;
+}
+.filtro form .inputs .input1 {
+  grid-area: zona1;
+}
+.filtro form .inputs .input2 {
+  grid-area: zona2;
+}
+.filtro form .inputs .input3 {
+  grid-area: zona3;
+}
+@media (max-width: 600px) {
+  .filtro form .inputs .input3 {
+    justify-self: center;
+  }
+}
+.filtro form .inputs .input4 {
+  grid-area: zona4;
+}
+@media (max-width: 600px) {
+  .filtro form .inputs .input4 {
+    justify-self: center;
+  }
+}
+.filtro form .inputs .input5 {
+  grid-area: zona5;
+}
+.filtro form .inputs .input6 {
+  grid-area: zona6;
+}
+@media (max-width: 1200px) {
+  .filtro form .inputs {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 4em 4em 4em 4em;
+    grid-template-areas: "zona1 zona1 zona2 zona2" "zona3 zona3 zona4 zona4" "zona5 zona5 zona5 zona5" "zona6 zona6 zona6 zona6";
+  }
+}
+@media (max-width: 600px) {
+  .filtro form .inputs {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 4em 4em 4em 4em;
+    grid-template-areas: "zona1 zona1 zona1 zona1" "zona2 zona2 zona2 zona2" "zona3 zona4 none  none" "zona5 zona5 zona5 zona5" "zona6 zona6 zona6 zona6";
+  }
+}
+.filtro form .inputs label {
+  font-size: 1.2em;
+  position: relative;
+  z-index: 1;
+  background-color: #035f50;
+  color: white;
+  right: -0.5em;
+  padding: 0.42em;
+}
+.filtro form .inputs label i {
+  color: white;
+}
+.filtro form .inputs input[type=text]::placeholder {
+  font-size: 1.1em;
+}
+.filtro form .inputs input[type=date] {
+  font-size: 1.2em;
+  width: 12em;
+  text-indent: 1.2em;
+}
+@media (max-width: 400px) {
+  .filtro form .inputs input[type=date] {
+    margin: 0.3em;
+    text-indent: 0;
+    width: 10em;
+  }
+}
+.filtro form .inputs input[type=date]::-webkit-calendar-picker-indicator {
+  background-image: url(../multimedia/img/calendar-days-solid.svg);
+  position: relative;
+  z-index: 1;
+  right: 9em;
+  font-family: "Kanit", sans-serif;
+}
+@media (max-width: 400px) {
+  .filtro form .inputs input[type=date]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+}
+.filtro form .inputs input[type=submit] {
+  width: 100%;
+  height: 3em;
+  padding: 0.6em 2.6em;
+  border-radius: 0.5em;
+  background-color: #BF2C47;
+  color: white;
+}
+@media (max-width: 600px) {
+  .filtro form .inputs input[type=submit] {
+    margin-top: 1em;
+  }
+}
+.filtro form .inputs .input5 input {
+  display: none;
+}
+.filtro form .inputs .input5 input:checked + .habitaciones {
+  display: flex;
+}
+.filtro form .inputs .input5 .habitaciones {
+  display: none;
+  width: 25em;
+  position: absolute;
+  z-index: 1;
+  padding: 1.5em;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px -0.3em 0.8em;
+  background-color: white;
+}
+.filtro form .inputs .input5 .habitaciones__datos {
+  display: flex;
+  margin-top: 1em;
+  align-items: center;
+}
+.filtro form .inputs .input5 .habitaciones__datos span, .filtro form .inputs .input5 .habitaciones__datos h4 {
+  margin: 0;
+  font-size: 1.2em;
+  width: 7em;
+  padding: 0 0.5em;
+  font-weight: 400;
+}
+.filtro form .inputs .input5 .habitaciones__datos button {
+  padding: 0.3em 1em;
+  border: 1px solid #1B80BF;
+}
+
 .promos .promo {
   min-height: 350px;
   display: flex;
