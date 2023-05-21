@@ -1,10 +1,21 @@
-.promos img{
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-
+.promos {
+    .promo{
+        min-height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    img{
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    
+    }
+    
 }
 
+
+
 .btn-promo{
-    @include boton(red,white,24px,200px)
+    @include boton($btn-color,white,24px,200px)
 }

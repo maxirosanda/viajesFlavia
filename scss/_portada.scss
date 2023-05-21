@@ -19,7 +19,7 @@
             text-shadow: $sombra-texto;
         }
         button{
-            @include boton(blue,white,20px,150px);
+            @include boton($btn-color,white,20px,150px);
         }
     }
 }

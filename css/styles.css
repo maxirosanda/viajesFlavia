@@ -10,7 +10,7 @@
 }
 
 .navegador {
-  background-color: #1205a0;
+  background-color: #035f50;
 }
 .navegador .logo {
   margin: 5px;
@@ -87,7 +87,7 @@
   border: none;
   margin: 10px;
   color: white;
-  background-color: blue;
+  background-color: #0d8f1e;
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
@@ -119,6 +119,12 @@
     font-size: 20px;
   }
 }
+.promos .promo {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .promos img {
   width: 100%;
   height: 100px;
@@ -132,7 +138,7 @@
   border: none;
   margin: 10px;
   color: white;
-  background-color: red;
+  background-color: #0d8f1e;
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
@@ -158,7 +164,7 @@
   top: 0;
 }
 .lanzamiento .contenido h3 {
-  color: #1205a0;
+  color: #035f50;
   font-size: 88px;
   font-weight: 800;
 }
@@ -201,7 +207,7 @@
 }
 .lanzamiento .contenido .btn::after {
   content: "";
-  background: #1205a0; /* color de fondo hover */
+  background: #035f50; /* color de fondo hover */
   position: absolute;
   z-index: -1;
   display: block;
@@ -220,7 +226,7 @@
 }
 
 .lanzamiento-producto span {
-  color: #1205a0;
+  color: #035f50;
   font-weight: 700;
 }
 
@@ -316,7 +322,7 @@
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  border: 1px solid #1205a0;
+  border: 1px solid #035f50;
   margin-top: 0;
   font-weight: 700px;
 }
@@ -345,7 +351,7 @@
   position: absolute;
   width: 100%;
   right: 0px;
-  border: solid 2px #1205a0;
+  border: solid 2px #035f50;
   border-radius: 10px;
   outline: none;
   font-size: 16px;
@@ -359,18 +365,18 @@
   width: 40px;
   font-size: 16px;
   border-radius: 50%;
-  border: solid 2px #1205a0;
+  border: solid 2px #035f50;
   padding: 5px;
   transition: 0.35s;
 }
 .novedades button:hover {
-  background-color: #1205a0;
+  background-color: #035f50;
 }
 .novedades button:hover i {
   color: white;
 }
 .novedades button i {
-  color: #1205a0;
+  color: #035f50;
 }
 .novedades h2 {
   font-size: 48px;
@@ -388,8 +394,8 @@
   margin: 10px;
 }
 .tarjeta-destacada img {
-  width: 200px;
-  height: 120px;
+  width: 120px;
+  height: 80px;
   object-fit: cover;
 }
 .tarjeta-destacada .contenido button, .tarjeta-destacada .contenido a {
@@ -399,7 +405,7 @@
   border: none;
   margin: 10px;
   color: white;
-  background-color: red;
+  background-color: #0d8f1e;
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
@@ -420,7 +426,7 @@
 /*Formulario de contactos */
 .formulario {
   width: 700px;
-  background-color: #1205a0;
+  background-color: #035f50;
   box-shadow: 1px 1px 7px 2px #000000;
   margin: 40px auto;
   border-radius: 5px;
@@ -444,7 +450,7 @@
 }
 
 .formulario label input, .formulario label textarea {
-  background-color: #1205a0;
+  background-color: #035f50;
   border: none;
   border-bottom: 1px solid white;
   padding: 10px;
@@ -474,7 +480,7 @@
 .formulario button {
   grid-area: boton;
   background-color: white;
-  color: #1205a0;
+  color: #035f50;
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -492,7 +498,7 @@
 }
 /* Footer*/
 .footer {
-  background-color: #1205a0;
+  background-color: #035f50;
   color: white;
 }
 

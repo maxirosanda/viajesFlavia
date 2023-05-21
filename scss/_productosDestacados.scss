@@ -7,12 +7,12 @@
     width: 460px;
     margin: 10px;
     img {
-        width: 200px;
-        height: 120px;
+        width: 120px;
+        height: 80px;
         object-fit: cover;
     }
     .contenido button, .contenido a{
-       @include boton(red,white,16px,100px);
+       @include boton($btn-color,white,16px,100px);
 }
 }
 
