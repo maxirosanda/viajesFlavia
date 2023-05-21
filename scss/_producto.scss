@@ -21,7 +21,7 @@
             z-index: 100;
         }
         .boton-compra{
-            @include boton(red,white,16px,100px);
+            @include boton($btn-color,white,16px,100px);
             margin-bottom: 5px;
         }
         .boton-carrito{
